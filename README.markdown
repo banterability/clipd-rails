@@ -1,27 +1,24 @@
-clip'd
-======
+# clip'd #
 
-Roadmap:
---------
+### Roadmap: ###
 
 RC1:
 
-- Clipping bookmarklet
-- List clips
-- Delete clips
+* Clipping bookmarklet
+* List clips
+* Delete clips
+* View single clip
 
 RC2:
 
-- RESTful routes
-- Manual clip creation
+* RESTful routes
+* Manual clip creation
 
 RC3:
 
-- User accounts
-- Client-server database engine
+* User accounts
+* Client-server database engine
 
 RC4:
 
-- Bookmarklet security hash
-
-1.0:
+* Bookmarklet security hash
