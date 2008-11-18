@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  selection: MyString
+  sourceUri: MyString
+  sourceTitle: MyString
+
+two:
+  selection: MyString
+  sourceUri: MyString
+  sourceTitle: MyString

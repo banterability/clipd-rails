@@ -1,0 +1,23 @@
+<h1>New clip</h1>
+
+<% form_for(@clip) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :selection %><br />
+    <%= f.text_field :selection %>
+  </p>
+  <p>
+    <%= f.label :sourceUri %><br />
+    <%= f.text_field :sourceUri %>
+  </p>
+  <p>
+    <%= f.label :sourceTitle %><br />
+    <%= f.text_field :sourceTitle %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', clips_path %>

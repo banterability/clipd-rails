@@ -1,0 +1,18 @@
+<p>
+  <b>Selection:</b>
+  <%=h @clip.selection %>
+</p>
+
+<p>
+  <b>Sourceuri:</b>
+  <%=h @clip.sourceUri %>
+</p>
+
+<p>
+  <b>Sourcetitle:</b>
+  <%=h @clip.sourceTitle %>
+</p>
+
+
+<%= link_to 'Edit', edit_clip_path(@clip) %> |
+<%= link_to 'Back', clips_path %>
