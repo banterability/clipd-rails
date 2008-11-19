@@ -22,4 +22,4 @@ RC3:
 
 RC4:
 
-* Security hash in bookmarket
+* Security hash in bookmarklet
