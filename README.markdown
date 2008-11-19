@@ -1,18 +1,19 @@
 # clip'd #
+_a fast & easy online clipping service_
 
 ### Roadmap: ###
 
 RC1:
 
 * Clipping bookmarklet
-* List clips
-* Delete clips
-* View single clip
+* List & delete clips
+* View/link to a single clip
+* RESTful routes
 
 RC2:
 
-* RESTful routes
 * Manual clip creation
+* Improved UI
 
 RC3:
 
@@ -21,4 +22,4 @@ RC3:
 
 RC4:
 
-* Bookmarklet security hash
+* Security hash in bookmarket
