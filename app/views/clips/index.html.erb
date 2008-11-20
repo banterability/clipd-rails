@@ -2,8 +2,8 @@
 
 <% for clip in @clips %>
   <div style="border:1px solid black;margin:5px">
-    <blockquote><%=h clip.selection %></blockquote>
-    <span>From <%= link_to clip.sourceTitle, clip.sourceUri %> | at <%=h clip.created_at.to_i %></span><br />
+    <blockquote>"<%=h clip.selection %>"</blockquote>
+    <span>From <%= link_to clip.sourceTitle, clip.sourceUri %> | at <%=h clip.created_at.to_i %></span> || 
     <%= link_to 'show', clip %> | 
     <%= link_to 'edit', edit_clip_path(clip) %> | 
     <%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
