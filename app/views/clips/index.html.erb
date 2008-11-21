@@ -1,23 +1,14 @@
 <h1>Listing clips</h1>
 
-<table>
-  <tr>
-    <th>Selection</th>
-    <th>Sourceuri</th>
-    <th>Sourcetitle</th>
-  </tr>
-
 <% for clip in @clips %>
-  <tr>
-    <td><%=h clip.selection %></td>
-    <td><%=h clip.sourceUri %></td>
-    <td><%=h clip.sourceTitle %></td>
-    <td><%= link_to 'Show', clip %></td>
-    <td><%= link_to 'Edit', edit_clip_path(clip) %></td>
-    <td><%= link_to 'Destroy', clip, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <div style="border:1px solid black;margin:5px">
+    <blockquote>"<%=h clip.selection %>"</blockquote>
+    <span>From <%= link_to clip.sourceTitle, clip.sourceUri %> | at <%=h clip.created_at.to_i %></span> || 
+    <%= link_to 'show', clip %> | 
+    <%= link_to 'edit', edit_clip_path(clip) %> | 
+    <%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
+	</div>
 <% end %>
-</table>
 
 <br />
 
