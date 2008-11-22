@@ -1,12 +1,14 @@
 <h1>Listing clips</h1>
 
 <% for clip in @clips %>
-  <div style="border:1px solid black;margin:5px">
-    <blockquote>"<%=h clip.selection %>"</blockquote>
-    <span>From <%= link_to clip.sourceTitle, clip.sourceUri %> | at <%=h clip.created_at.to_i %></span> || 
+	<div style="width:500px;padding:10px">
+		<a class="permalink" href="#">link</a><br style="clear:both" />
+    <blockquote class="clipText"><p><span class="bigQuote">&#8220;</span><%=h clip.selection %></p></blockquote>
+    <p class="meta">From <%= link_to clip.sourceTitle, clip.sourceUri %> <%= timeago clip.created_at %></p> <br /> 
     <%= link_to 'show', clip %> | 
     <%= link_to 'edit', edit_clip_path(clip) %> | 
     <%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
+	
 	</div>
 <% end %>
 

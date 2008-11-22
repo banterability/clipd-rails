@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ 
+  <title>clip'd: <%= controller.action_name %></title>
+	<%= javascript_include_tag 'jquery-1.2.6.min' %>
+	<%= javascript_include_tag 'timeago' %>
+	<script type="text/javascript" charset="utf-8">
+		jQuery(document).ready(function() {
+		  jQuery('abbr[class*=timeago]').timeago();
+		});
+	</script>
+
+	<style type="text/css">
+	blockquote.clipText{
+		margin: 10px auto;
+		margin-top:0;
+		color: #404033;
+		font-family: Arial;
+		font-size: 20px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		letter-spacing: -1px;
+	//	width: 600px;
+	}
+	p.meta{
+		font-weight: bold;
+		margin: 0;
+		color: rgb(36,31,31);
+		font-size: 13px;
+	//	width: 600px;
+		text-align: right;
+		font-family: Trebuchet MS;
+	}
+	.bigQuote{
+		display: inline;
+		font-size: 60px;
+		font-weight: bold;
+		height: 69px;
+		line-height: 8px;
+		vertical-align: -20px;
+		width: 29px;
+		font-family: Arial;
+	}
+	a{
+		background-color: #777;
+		color: white;
+		text-decoration: none;
+				padding: 3px;
+		font-weight: bold;
+	}
+	a:hover{
+		background-color: white;
+		color: #777;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	input{
+	float:left;
+	margin-left:30px;
+	}
+	a.permalink{
+	float:right;
+	margin-bottom:-100px;
+	}
+	</style>
+</head>
+<body>
+ 
+<h1>clip'd</h1>
+<hr />
+ 
+<p style="color: green"><%= flash[:notice] %></p>
+ 
+<%= yield  %>
+ 
+</body>
+</html>
