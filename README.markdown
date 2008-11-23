@@ -3,6 +3,8 @@ _a fast & easy online clipping service_
 
 ### Roadmap: ###
 
+_(<<: you are here)_
+
 RC1:
 
 * Clipping bookmarklet
