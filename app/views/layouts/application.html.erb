@@ -15,26 +15,52 @@
 	</script>
 
 	<style type="text/css">
-	blockquote.clipText{
+
+	#canvas{
+
+	}
+	#header{
+		background-color:blue;
+	}
+	#footer{
+		background-color:red;
+	}
+
+	table#clip-list{
+		width:950px;
+	}
+
+	tr.clip{
+		padding-bottom: 40px;
+	}
+
+	td.clip-body{
+		vertical-align:middle;
+		height:80px;
+		border-bottom: 3px dashed black; //rgb(210,218,218);
+
+	}
+
+	.clip-body{
 		margin: 10px auto;
 		margin-top:0;
 		color: #404033;
 		font-family: Arial;
-		font-size: 20px;
+		font-size: 24px;
 		font-style: normal;
 		font-variant: normal;
 		font-weight: bold;
 		letter-spacing: -1px;
-	//	width: 600px;
+
 	}
-	p.meta{
+	.clip-meta{
+		float:right;
 		font-weight: bold;
 		margin: 0;
-		color: rgb(36,31,31);
-		font-size: 13px;
-	//	width: 600px;
+		color: #555555;
+		font-size: 16px;
 		text-align: right;
-		font-family: Trebuchet MS;
+		font-family: Verdana;
 	}
 	.bigQuote{
 		display: inline;
@@ -46,6 +72,14 @@
 		width: 29px;
 		font-family: Arial;
 	}
+	.flash{
+		color:green;
+		background-color:#FFFFCC;
+		width:80%;
+		border:solid 2px black;
+	}
+
+	/*
 	a{
 		background-color: #777;
 		color: white;
@@ -67,16 +101,34 @@
 	float:right;
 	margin-bottom:-100px;
 	}
+	*/
+
 	</style>
 </head>
 <body>
- 
-<h1>clip'd</h1>
-<hr />
- 
+	
+<div id="canvas">
+		
+	<div id="header">
+		<h1>clip'd</h1>
+	</div>
+	
+	<div id="content">
+
+
 <p style="color: green"><%= flash[:notice] %></p>
- 
+<!--		<div class="flash">## flash ##</div> -->
+
 <%= yield  %>
  
+	</div>
+	
+	<div id="footer">
+		&copy; 2008 - clip'd
+	</div>
+
+</div>
+	
+
 </body>
 </html>

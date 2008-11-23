@@ -1,9 +1,19 @@
-<div style="width:500px;padding:10px">
-	<a class="permalink" href="#">link</a><br style="clear:both" />
-  <blockquote class="clipText"><p><span class="bigQuote">&#8220;</span><%=h clip.selection %></p></blockquote>
-  <p class="meta">From <%= link_to clip.sourceTitle, clip.sourceUri %> <%= timeago clip.created_at %></p> <br /> 
-  <%= link_to 'show', clip %> | 
-  <%= link_to 'edit', edit_clip_path(clip) %> | 
-  <%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
-
-</div>
+<tr class="clip">
+	<td class="clip-body">
+		<div>
+			<span class="clip-content">
+				<span class="bigQuote">&#8220;</span>
+					<%=h clip.selection %>
+			</span><br />
+			<span class="clip-meta">
+				From <%= link_to clip.sourceTitle, clip.sourceUri %> <%= timeago clip.created_at %>
+			</span>
+		</div>
+	</td>
+	<td class="clip-actions">
+		<div>
+			<a class="permalink" href="#">link</a> +
+			<%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
+		</div>
+	</td>
+</tr>

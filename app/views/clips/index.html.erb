@@ -1,8 +1,10 @@
 <h1>Listing clips</h1>
 
+<table id="clip-list">
 <% for clip in @clips %>
 	<%= render_partial 'clip', clip %>
 <% end %>
+</table>
 
 <br />
 
