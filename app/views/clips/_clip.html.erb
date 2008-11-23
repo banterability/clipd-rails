@@ -1,19 +1,16 @@
-<tr class="clip">
-	<td class="clip-body">
-		<div>
-			<span class="clip-content">
-				<span class="bigQuote">&#8220;</span>
+<div class="clip-body">
+	<div class="clip-content">
+		<span class="bigQuote">&#8220;</span>
 					<%=h clip.selection %>
-			</span><br />
-			<span class="clip-meta">
+	</div>
+	<div class="clip-meta">
+		<span class="clip-actions">
+				<a class="permalink" href="#">link</a> + 
+				<%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
+		</span>
+		<span class="clip-info">
 				From <%= link_to clip.sourceTitle, clip.sourceUri %> <%= timeago clip.created_at %>
-			</span>
-		</div>
-	</td>
-	<td class="clip-actions">
-		<div>
-			<a class="permalink" href="#">link</a> +
-			<%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
-		</div>
-	</td>
-</tr>
+		</span>
+		<br style="clear:both" />
+	</div>
+</div>

@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
  
   <title>clip'd: <%= controller.action_name %></title>
+
 	<%= javascript_include_tag 'jquery-1.2.6.min' %>
 	<%= javascript_include_tag 'timeago' %>
 	<script type="text/javascript" charset="utf-8">
@@ -14,121 +15,43 @@
 		});
 	</script>
 
-	<style type="text/css">
-
-	#canvas{
-
-	}
-	#header{
-		background-color:blue;
-	}
-	#footer{
-		background-color:red;
-	}
-
-	table#clip-list{
-		width:950px;
-	}
-
-	tr.clip{
-		padding-bottom: 40px;
-	}
-
-	td.clip-body{
-		vertical-align:middle;
-		height:80px;
-		border-bottom: 3px dashed black; //rgb(210,218,218);
-
-	}
-
-	.clip-body{
-		margin: 10px auto;
-		margin-top:0;
-		color: #404033;
-		font-family: Arial;
-		font-size: 24px;
-		font-style: normal;
-		font-variant: normal;
-		font-weight: bold;
-		letter-spacing: -1px;
-
-	}
-	.clip-meta{
-		float:right;
-		font-weight: bold;
-		margin: 0;
-		color: #555555;
-		font-size: 16px;
-		text-align: right;
-		font-family: Verdana;
-	}
-	.bigQuote{
-		display: inline;
-		font-size: 60px;
-		font-weight: bold;
-		height: 69px;
-		line-height: 8px;
-		vertical-align: -20px;
-		width: 29px;
-		font-family: Arial;
-	}
-	.flash{
-		color:green;
-		background-color:#FFFFCC;
-		width:80%;
-		border:solid 2px black;
-	}
-
-	/*
-	a{
-		background-color: #777;
-		color: white;
-		text-decoration: none;
-				padding: 3px;
-		font-weight: bold;
-	}
-	a:hover{
-		background-color: white;
-		color: #777;
-		text-decoration: underline;
-		font-weight: bold;
-	}
-	input{
-	float:left;
-	margin-left:30px;
-	}
-	a.permalink{
-	float:right;
-	margin-bottom:-100px;
-	}
-	*/
-
-	</style>
+	<%= stylesheet_link_tag 'static' %>
+	
 </head>
 <body>
 	
 <div id="canvas">
 		
 	<div id="header">
-		<h1>clip'd</h1>
+		<div class="contentBox"><%= image_tag 'logo.png' %></div>
 	</div>
 	
 	<div id="content">
-
-
+<div class="contentBox">		
+	
 <p style="color: green"><%= flash[:notice] %></p>
 <!--		<div class="flash">## flash ##</div> -->
 
+
 <%= yield  %>
- 
-	</div>
-	
-	<div id="footer">
-		&copy; 2008 - clip'd
-	</div>
 
 </div>
+</div>
 	
+<div id="footer">
+		<div class="contentBox">
+			<p>&copy; 2008 clip'd, 
+			by <a href="#">Jeffrey Long</a>
+			&nbsp;&nbsp;||&nbsp;&nbsp;
+			follow the project on <a href="#">Twitter</a>
+			&nbsp;&nbsp;||&nbsp;&nbsp;
+			source on <a href="#">Github</a>
+			&nbsp;&nbsp;||&nbsp;&nbsp;
+			hosted by <a href="#">Media Temple</a></p>
+		</div>
+</div>
+
+</div>
 
 </body>
 </html>
