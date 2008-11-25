@@ -1,39 +1,37 @@
 # clip'd #
 _fast, easy, & free online clipping_
 
+---
+
 ### Major milestones: ###
 
-1.0d:
+* 1.0d:
+	* PHP prototype
+	* Clipping bookmarklet
+	* View list of clips
 
-* PHP prototype
-* Clipping bookmarklet
-* View list of clips
+* 1.0d2:
+	* Port to Rails
+	* List & delete clips
+	* View/link to a single clip
 
-1.0d2:
+*	1.0d3: _<<: next milestone_
+	* RESTful routes
+	* Dual-purpose bookmarklet (clipping OR manual text input)
+	* Improved UI
 
-* Port to Rails
-* List & delete clips
-* View/link to a single clip
+* 1.0a:
+	* Manual clip creation
 
-1.0d3: _<<: next milestone_
+* 1.0a2:
+	* User accounts
+	* Client-server database engine
 
-* RESTful routes
-* Dual-purpose bookmarklet (clipping OR manual text input)
-* Improved UI
+* 1.0b:
+	* __Beta release__
+	* Security hash in bookmarklet
 
-1.0a:
-
-* Manual clip creation
-
-1.0a2:
-
-* User accounts
-* Client-server database engine
-
-1.0b:
-
-* __Beta release__
-* Security hash in bookmarklet
+---
 
 ### License: ###
 
