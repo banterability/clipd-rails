@@ -1,5 +1,5 @@
-__clip'd:__ _fast, easy, & free online clipping_
-================================================
+clip'd, _fast, easy, & free online clipping_
+============================================
 
 ### Milestones
 
@@ -27,8 +27,6 @@ Development Milestone 4:
 * User accounts
 * Client-server database engine
 * Security hash in bookmarklet
-
----
 
 ### License
 
