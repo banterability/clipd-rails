@@ -3,34 +3,34 @@ _fast, easy, & free online clipping_
 
 ### Major milestones: ###
 
-0.1:
+1.0d:
 
 * PHP prototype
 * Clipping bookmarklet
 * View list of clips
 
-0.2:
+1.0d2:
 
 * Port to Rails
 * List & delete clips
 * View/link to a single clip
 
-0.3: _<<: next milestone_
+1.0d3: _<<: next milestone_
 
 * RESTful routes
 * Dual-purpose bookmarklet (clipping OR manual text input)
 * Improved UI
 
-0.5:
+1.0a:
 
 * Manual clip creation
 
-0.7:
+1.0a2:
 
 * User accounts
 * Client-server database engine
 
-0.8:
+1.0b:
 
 * __Beta release__
 * Security hash in bookmarklet
