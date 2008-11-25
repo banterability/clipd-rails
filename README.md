@@ -1,32 +1,32 @@
-** clip'd ** _fast, easy, & free online clipping_
-=================================================
+__clip'd:__ _fast, easy, & free online clipping_
+================================================
 
 ### Milestones
 
 Development Milestone 1:
 
-	* PHP prototype
-	* Clipping bookmarklet
-	* View list of clips
+* PHP prototype
+* Clipping bookmarklet
+* View list of clips
 
 Development Milestone 2:
 
-	* Port to Rails
-	* List & delete clips
-	* View/link to a single clip
+* Port to Rails
+* List & delete clips
+* View/link to a single clip
 
-Development Milestone 3: _<<: next milestone_
+Development Milestone 3: _<< next milestone_
 
-	* RESTful routes
-	* Dual-purpose bookmarklet (clipping OR manual text input)
-	* Improved UI
+* RESTful routes
+* Dual-purpose bookmarklet (clipping OR manual text input)
+* Improved UI
 
 Development Milestone 4:
 
-	* Manual clip creation
-	* User accounts
-	* Client-server database engine
-	* Security hash in bookmarklet
+* Manual clip creation
+* User accounts
+* Client-server database engine
+* Security hash in bookmarklet
 
 ---
 
