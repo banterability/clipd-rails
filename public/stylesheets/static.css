@@ -1,96 +1,97 @@
-* {
-margin: 0;
-padding: 0;
-}
 body {
-background-color: #FFFFFF;
-font-family: "Lucida Grande", Verdana, sans-serif;
-font-size: 12px;
-color: black;
-font-weight: normal;
-}
-#header {
-background-color: #3d5728;
-height: 70px;
-border-bottom: 5px solid black;
-padding: 0 20px;
-}
-#content {
-margin: 10px 0;
-padding: 0 20px;
-}
-#footer {
-background-color: #3d5728;
-color: #FFFFFF;
-border-top: 5px solid black;
-padding: 0 20px;
-text-align: center;
-}
-.contentBox {
-width: 760px;
-margin: 0 auto;
-padding: 10px 0;
-}
-.clip-body {
-padding-bottom: 5px;
-border-bottom: 2px dashed #444444; //rgb(210,218,218);
-margin-bottom: 20px;
-}
-.clip-content {
-color: #323232;
-font-family: Arial;
-font-size: 24px;
-font-style: normal;
-font-variant: normal;
-font-weight: bold;
-letter-spacing: -1px;
-padding-bottom: 10px;
-}
-.clip-meta {
-font-size: 14px;
-color: #72766B;
-}
-	.clip-info {
-float: right;
-text-align: right;
-}
-	.clip-actions {
-float: left;
-text-align: left;
-}
-.bigQuote {
-display: inline;
-font-size: 60px;
-font-weight: bold;
-height: 69px;
-line-height: 8px;
-vertical-align: -20px;
-width: 29px;
-font-family: Arial;
-}
-.clip-meta a {
-background-color: #666666;
-color: white;
-text-decoration: none;
-padding: 2px;
-font-weight: bold;
-}
-.clip-meta a:hover {
-background-color: white;
-color: #444444;
-text-decoration: underline;
-font-weight: bold;
-}
-/*
-a.permalink {
-float: right;
-margin-bottom: -100px;
-}
-input {
-float: left;
-margin-left: 30px;
+	background-color: #FFFFFF;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	font-size: 12px;
+	color: black;
+	font-weight: normal;
 }
 
+#header {
+	background-color: #3d5728;
+	height: 70px;
+	border-bottom: 5px solid black;
+	padding: 0 20px;
+}
+
+#content {
+	margin: 10px 0;
+	padding: 0 20px;
+}
+
+#footer {
+	background-color: #3d5728;
+	color: #FFFFFF;
+	border-top: 5px solid black;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.contentBox {
+	width: 760px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.clip-body {
+	padding-bottom: 5px;
+	border-bottom: 2px dashed #444444;
+	//rgb(210,218,218);
+margin-bottom: 20px;
+}
+
+.clip-content {
+	color: #323232;
+	font-family: Arial;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	letter-spacing: -1px;
+	padding-bottom: 10px;
+}
+
+.clip-meta {
+	font-size: 14px;
+	color: #72766B;
+}
+
+.clip-info {
+	float: right;
+	text-align: right;
+}
+
+.clip-actions {
+	float: left;
+	text-align: left;
+}
+
+.bigQuote {
+	display: inline;
+	font-size: 60px;
+	font-weight: bold;
+	height: 69px;
+	line-height: 8px;
+	vertical-align: -20px;
+	width: 29px;
+	font-family: Arial;
+}
+
+.clip-meta a {
+	background-color: #666666;
+	color: white;
+	text-decoration: none;
+	padding: 2px;
+	font-weight: bold;
+}
+
+.clip-meta a:hover {
+	background-color: white;
+	color: #444444;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*
 .flash {
 color: green;
 background-color: #FFFFCC;
