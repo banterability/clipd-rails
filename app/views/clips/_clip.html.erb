@@ -5,11 +5,11 @@
 	</div>
 	<div class="clip-meta">
 		<span class="clip-actions">
-				<a class="permalink" href="#">link</a> + 
+				<%= link_to 'link', clip %>
 				<%= link_to 'delete', clip, :confirm => 'Are you sure?', :method => :delete %>
 		</span>
 		<span class="clip-info">
-				From <%= link_to clip.sourceTitle, clip.sourceUri %> <%= timeago clip.created_at %>
+				From <%= link_to h(clip.sourceTitle), clip.sourceUri %> <%= timeago clip.created_at %>
 		</span>
 		<br style="clear:both" />
 	</div>
