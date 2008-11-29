@@ -5,7 +5,7 @@ clip'd, _fast, easy, & free online clipping_
 
 Development Milestone 1:
 
-* <strike>PHP prototype</strike>
+* <span style="text-decoration:line-through">PHP prototype</span>
 * <strike>Clipping bookmarklet</strike>
 * <strike>View list of clips</strike>
 
