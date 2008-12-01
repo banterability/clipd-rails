@@ -112,8 +112,7 @@ a {
 	padding: 0;
 	margin: 0;
 }
-
-.clip-meta a {
+.clip-info a {
 	background-color: #111;
 	color: #fff;
 	text-decoration: none;
@@ -121,17 +120,21 @@ a {
 	margin: 2px;
 	font-weight: bold;
 }
-
+.clip-actions a{
+	padding: 5px;
+	vertical-align: top;
+}
 a:hover {
 	text-decoration: underline;
 	font-weight: bold;
 }
-
 .clip-meta a:hover {
 	background-color: #fff;
 	color: #111;
 }
-
+.clip-actions a:hover{
+	background-color:#CCC;
+}
 #header a:hover, #footer a:hover {
 	background-color: #111;
 	color: #fff;
