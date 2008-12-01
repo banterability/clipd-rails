@@ -1,5 +1,5 @@
 <div id="clip-list">
 <% for clip in @clips %>
-	<%= render_partial 'clip', clip %>
+	<%= render :partial => 'clip', :locals => { :clip => clip }  %>
 <% end %>
 </div>
