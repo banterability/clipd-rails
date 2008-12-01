@@ -45,10 +45,10 @@ class ClipsController < ApplicationController
     respond_to do |format|
       if @clip.save
         flash[:notice] = 'Clip was successfully created.'
-        format.html { redirect_to(clips_url) }
+        format.html { redirect_to(@clip) }
         format.xml  { render :xml => @clip, :status => :created, :location => @clip }
       else
-        format.html { render :action => "index" }
+        format.html { render :action => "new" }
         format.xml  { render :xml => @clip.errors, :status => :unprocessable_entity }
       end
     end
