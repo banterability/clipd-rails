@@ -7,59 +7,21 @@
  
   <title>clip'd: <%= controller.action_name %></title>
 
-	<%= javascript_include_tag 'jquery-1.2.6.min' %>
-	<%= javascript_include_tag 'timeago' %>
-	<script type="text/javascript" charset="utf-8">
-		jQuery(document).ready(function() {
-		  jQuery('abbr[class*=timeago]').timeago();
-		});
-	</script>
+	<%= render :partial => 'includes' %>
 
-	<%= stylesheet_link_tag 'reset' %>
-	<%= stylesheet_link_tag 'static' %>
-	
 </head>
-<body>
-	
-<div id="canvas">
 		
-	<div id="header">
-		<div class="contentBox">
-	 		<div id="header-logo">
-	 	<%= link_to image_tag('logo.png'), :action => 'index' %>
-			</div>
-		<div id="header-meta">
-		<p>Can you <a href="javascript:var%20q,e=encodeURIComponent;if%20(window.getSelection)%20q=window.getSelection();%20else%20if%20(document.selection)%20q=document.selection.createRange().text;if%20(q!=''){u=location.href;t=document.title;}else{q=prompt(%22Clip%20it:%22,%22%22);t='Manual%20Clip';u='none'};if%20(q)%20location.href='http://localhost:3000/clips/new?u='+e(u)+'&s='+e(q)+'&t='+e(t);">clip it</a>?</p>
-		</div>
-				</div>
+<%= render :partial => 'header' %>
+	
+<div id="content">
+	<div class="contentBox">		
+	
+		<p style="color: green"><%= flash[:notice] %></p>
+		<!--	<div class="flash">## flash ##</div> -->
+
+		<%= yield  %>
+
 	</div>
-	
-	<div id="content">
-<div class="contentBox">		
-	
-<p style="color: green"><%= flash[:notice] %></p>
-<!--		<div class="flash">## flash ##</div> -->
-
-
-<%= yield  %>
-
-</div>
 </div>
 	
-<div id="footer">
-		<div class="contentBox">
-			<p>&copy; 2008 clip'd, 
-			by <a href="#">Jeffrey Long</a>
-			&nbsp;&nbsp;||&nbsp;&nbsp;
-			follow the project on <a href="#">Twitter</a>
-			&nbsp;&nbsp;||&nbsp;&nbsp;
-			source on <a href="#">Github</a>
-			&nbsp;&nbsp;||&nbsp;&nbsp;
-			hosted by <a href="#">Media Temple</a></p>
-		</div>
-</div>
-
-</div>
-
-</body>
-</html>
+<%= render :partial => 'footer' %>

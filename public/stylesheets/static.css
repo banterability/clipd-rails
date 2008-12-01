@@ -1,5 +1,5 @@
 html {
-	background-color: #1a2611;
+	background-color: #111;
 }
 strong {
 	font-weight: bold;
@@ -8,17 +8,17 @@ em {
 	font-style: italic;
 }
 body {
-	font-family: "Lucida Grande", Verdana, sans-serif;
-	background-color: #ffffff;
+	font-family: Verdana, sans-serif;
+	background-color: #fff;
 	font-size: 12px;
 	color: black;
 	font-weight: normal;
 }
 #header {
 	height: 70px;
-	border-bottom: 3px solid #333333;
+	border-bottom: 3px solid #555;
 	padding: 0 20px;
-	background-color: #1a2611;
+	background-color: #111;
 	color: white;
 }
 #header-logo {
@@ -27,18 +27,22 @@ body {
 #header-meta {
 	float: right;
 	padding: 0 20px;
+	padding-top: 30px;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: "Trebuchet MS"
 }
 #content {
-	background-color: #ffffff;
+	background-color: #fff;
 	margin: 10px 0;
 	padding: 0 20px;
 }
 #footer {
-	color: #FFFFFF;
-	border-top: 3px solid #333333;
+	color: #fff;
+	border-top: 3px solid #55;
 	padding: 0 20px;
 	text-align: center;
-	background-color: #1a2611;
+	background-color: #111;
 }
 .contentBox {
 	width: 760px;
@@ -47,12 +51,11 @@ body {
 }
 .clip-body {
 	padding-bottom: 10px;
-	border-bottom: 2px inset #444444;
-	//rgb(210,218,218);
+	border-bottom: 2px inset #888;
     margin-bottom: 20px;
 }
 .clip-content {
-	color: #323232;
+	color: #111;
 	font-family: Arial;
 	font-size: 24px;
 	font-style: normal;
@@ -63,7 +66,7 @@ body {
 }
 .clip-meta {
 	font-size: 14px;
-	color: #72766B;
+	color: #444;
 }
 .clip-info {
 	float: right;
@@ -87,8 +90,8 @@ a {
 	font-weight: bold;
 }
 #header a, #footer a {
-	background-color: #ffffff;
-	color: #1a2611;
+	background-color: #fff;
+	color: #111;
 }
 #header-logo a {
 	background-color: transparent;
@@ -96,8 +99,8 @@ a {
 	margin: 0;
 }
 .clip-meta a {
-	background-color: #1a2611;
-	color: #FFFFFF;
+	background-color: #111;
+	color: #fff;
 	text-decoration: none;
 	padding: 3px;
 	margin: 2px;
@@ -108,12 +111,12 @@ a:hover {
 	font-weight: bold;
 }
 .clip-meta a:hover {
-	background-color: #ffffff;
-	color: #111111;
+	background-color: #fff;
+	color: #111;
 }
 #header a:hover, #footer a:hover {
-	background-color: #1a2611;
-	color: #ffffff;
+	background-color: #111;
+	color: #fff;
 }
 abbr {
 	//border-bottom: 1px dashed black;
