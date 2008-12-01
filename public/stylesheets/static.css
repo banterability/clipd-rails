@@ -1,29 +1,37 @@
 html {
 	background-color: #111;
 }
+
 strong {
 	font-weight: bold;
 }
+
 em {
 	font-style: italic;
 }
+
+#canvas {
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
 body {
 	font-family: Verdana, sans-serif;
-	background-color: #fff;
 	font-size: 12px;
 	color: black;
 	font-weight: normal;
 }
+
 #header {
 	height: 70px;
-	border-bottom: 3px solid #555;
 	padding: 0 20px;
-	background-color: #111;
 	color: white;
 }
+
 #header-logo {
 	float: left;
 }
+
 #header-meta {
 	float: right;
 	padding: 0 20px;
@@ -32,28 +40,27 @@ body {
 	line-height: 18px;
 	font-family: "Trebuchet MS"
 }
+
 #content {
 	background-color: #fff;
-	margin: 10px 0;
-	padding: 0 20px;
+	padding: 20px 20px 10px 20px;
+	border-top: 3px solid #555;
+	border-bottom: 3px solid #555;
 }
+
 #footer {
 	color: #fff;
-	border-top: 3px solid #55;
-	padding: 0 20px;
+	overflow: visible;
+	padding: 10px 20px;
 	text-align: center;
-	background-color: #111;
 }
-.contentBox {
-	width: 760px;
-	margin: 0 auto;
-	padding: 10px 0;
-}
+
 .clip-body {
 	padding-bottom: 10px;
 	border-bottom: 2px inset #888;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
 .clip-content {
 	color: #111;
 	font-family: Arial;
@@ -63,41 +70,49 @@ body {
 	font-weight: bold;
 	letter-spacing: -1px;
 	padding-bottom: 10px;
+	line-height: 30px;
 }
+
 .clip-meta {
 	font-size: 14px;
 	color: #444;
 }
+
 .clip-info {
 	float: right;
 	text-align: right;
 }
+
 .clip-actions {
 	float: left;
 	text-align: left;
 }
+
 .bigQuote {
 	display: inline;
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: bold;
-	line-height: 50px;
 	vertical-align: -10px;
 }
+
 a {
 	text-decoration: none;
 	padding: 3px;
 	margin: 2px;
 	font-weight: bold;
 }
+
 #header a, #footer a {
 	background-color: #fff;
 	color: #111;
 }
+
 #header-logo a {
 	background-color: transparent;
 	padding: 0;
 	margin: 0;
 }
+
 .clip-meta a {
 	background-color: #111;
 	color: #fff;
@@ -106,30 +121,35 @@ a {
 	margin: 2px;
 	font-weight: bold;
 }
+
 a:hover {
 	text-decoration: underline;
 	font-weight: bold;
 }
+
 .clip-meta a:hover {
 	background-color: #fff;
 	color: #111;
 }
+
 #header a:hover, #footer a:hover {
 	background-color: #111;
 	color: #fff;
 }
+
 abbr {
 	//border-bottom: 1px dashed black;
 	font-style: italic;
 }
+
 /*
 .flash {
-color: green;
-background-color: #FFFFCC;
-width: 80%;
-border: solid 2px black;
+	color: green;
+	background-color: #FFFFCC;
+	width: 80%;
+	border: solid 2px black;
 }
-.bigQuote { //old
+.bigQuote {//old
 	display: inline;
 	font-size: 60px;
 	font-weight: bold;

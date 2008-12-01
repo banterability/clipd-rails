@@ -13,15 +13,12 @@
 		
 <%= render :partial => 'header' %>
 	
-<div id="content">
-	<div class="contentBox">		
-	
+<div id="content">	
 		<p style="color: green"><%= flash[:notice] %></p>
 		<!--	<div class="flash">## flash ##</div> -->
 
 		<%= yield  %>
 
-	</div>
 </div>
 	
 <%= render :partial => 'footer' %>
