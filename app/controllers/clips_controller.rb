@@ -2,7 +2,7 @@ class ClipsController < ApplicationController
   # GET /clips
   # GET /clips.xml
   def index
-    @clips = Clip.find(:all)
+    @clips = Clip.find_latest
 
     respond_to do |format|
       format.html # index.html.erb
@@ -45,10 +45,10 @@ class ClipsController < ApplicationController
     respond_to do |format|
       if @clip.save
         flash[:notice] = 'Clip was successfully created.'
-        format.html { redirect_to(@clip) }
+        format.html { redirect_to(clips_url) }
         format.xml  { render :xml => @clip, :status => :created, :location => @clip }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "index" }
         format.xml  { render :xml => @clip.errors, :status => :unprocessable_entity }
       end
     end
