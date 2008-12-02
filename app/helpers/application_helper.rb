@@ -6,4 +6,10 @@ module ApplicationHelper
     content_tag(:abbr, time.strftime("%b %d, %Y, %I:%M %p"), options.merge(:title => time.strftime("%b %d, %Y, %I:%M %p"))) if time
   end
   
+  def wb_truncate(text, length = 45, truncate_string = "...")
+    return if text.nil?
+    l = length - truncate_string.chars.length
+    text.chars.length > length ? text[/\A.{#{l}}\w*\;?/m][/.*[\w\;]/m] + truncate_string : text
+  end
+  
 end

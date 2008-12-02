@@ -9,7 +9,12 @@
 				<%= link_to image_tag('icons/delete.png'), clip, :confirm => 'Are you sure?', :method => :delete %>
 		</span>
 		<span class="clip-info">
-				From <%= link_to h(clip.sourceTitle), clip.sourceUri %> <%= timeago clip.created_at %>
+				<% if clip.sourceUri == nil -%>
+					<%= h(wb_truncate(clip.sourceTitle)) %>
+				<% else -%>
+					From <%= link_to h(wb_truncate(clip.sourceTitle)), clip.sourceUri -%>
+				<% end -%>
+				 <%= timeago clip.created_at %>
 		</span>
 		<br style="clear:both" />
 	</div>
