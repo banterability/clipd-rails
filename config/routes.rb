@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  map.connect 'clips/create', :controller => 'clips', :action => 'create', :conditions => { :method => :get }
+  
   map.resources :clips
 
   # The priority is based upon order of creation: first created -> highest priority.
