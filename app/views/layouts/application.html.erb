@@ -14,9 +14,10 @@
 <%= render :partial => 'header' %>
 	
 <div id="content">	
-		<p style="color: green"><%= flash[:notice] %></p>
-		<!--	<div class="flash">## flash ##</div> -->
-
+		<% if flash[:notice] %>
+		<div id="flash"><%= image_tag 'icons/info.png' %> <p><%= flash[:notice] %></p></div>
+		<% end %>
+		
 		<%= yield  %>
 
 </div>

@@ -43,7 +43,7 @@ class ClipsController < ApplicationController
     
     respond_to do |format|
       if @clip.save
-        flash[:notice] = 'Clip was successfully created.'
+        flash[:notice] = 'Your clip was successfully created.'
         format.html { redirect_to(clips_path) }
       else
         format.html { render :action => "new" }
@@ -58,6 +58,7 @@ class ClipsController < ApplicationController
     @clip.destroy
 
     respond_to do |format|
+      flash[:notice] = 'Your clip was successfully deleted.'
       format.html { redirect_to(clips_url) }
       format.xml  { head :ok }
     end

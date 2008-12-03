@@ -1,37 +1,30 @@
 html {
 	background-color: #111;
 }
-
 strong {
 	font-weight: bold;
 }
-
 em {
 	font-style: italic;
 }
-
 #canvas {
 	margin: 0 auto;
 	padding: 10px 0;
 }
-
 body {
 	font-family: Verdana, sans-serif;
 	font-size: 12px;
 	color: black;
 	font-weight: normal;
 }
-
 #header {
 	height: 70px;
 	padding: 0 20px;
 	color: white;
 }
-
 #header-logo {
 	float: left;
 }
-
 #header-meta {
 	float: right;
 	padding: 0 20px;
@@ -40,27 +33,23 @@ body {
 	line-height: 18px;
 	font-family: "Trebuchet MS"
 }
-
 #content {
 	background-color: #fff;
 	padding: 20px 20px 10px 20px;
 	border-top: 3px solid #555;
 	border-bottom: 3px solid #555;
 }
-
 #footer {
 	color: #fff;
 	overflow: visible;
 	padding: 10px 20px;
 	text-align: center;
 }
-
 .clip-body {
 	padding-bottom: 10px;
 	border-bottom: 2px inset #888;
 	margin-bottom: 20px;
 }
-
 .clip-content {
 	color: #111;
 	font-family: Arial;
@@ -72,41 +61,34 @@ body {
 	padding-bottom: 10px;
 	line-height: 30px;
 }
-
 .clip-meta {
 	font-size: 14px;
 	color: #444;
 }
-
 .clip-info {
 	float: right;
 	text-align: right;
 }
-
 .clip-actions {
 	float: left;
 	text-align: left;
 }
-
 .bigQuote {
 	display: inline;
 	font-size: 50px;
 	font-weight: bold;
 	vertical-align: -10px;
 }
-
 a {
 	text-decoration: none;
 	padding: 3px;
 	margin: 2px;
 	font-weight: bold;
 }
-
 #header a, #footer a {
 	background-color: #fff;
 	color: #111;
 }
-
 #header-logo a {
 	background-color: transparent;
 	padding: 0;
@@ -120,7 +102,7 @@ a {
 	margin: 2px;
 	font-weight: bold;
 }
-.clip-actions a{
+.clip-actions a {
 	padding: 5px;
 	vertical-align: top;
 }
@@ -132,26 +114,34 @@ a:hover {
 	background-color: #fff;
 	color: #111;
 }
-.clip-actions a:hover{
-	background-color:#CCC;
+.clip-actions a:hover {
+	background-color: #CCC;
 }
 #header a:hover, #footer a:hover {
 	background-color: #111;
 	color: #fff;
 }
-
 abbr {
 	//border-bottom: 1px dashed black;
 	font-style: italic;
 }
-
-/*
-.flash {
-	color: green;
-	background-color: #FFFFCC;
+div#flash {
 	width: 80%;
+	padding: 5px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #FFFFCC;
+	font-style: italic;
 	border: solid 2px black;
 }
+#flash p {
+	display: inline;
+	padding-left: 20px;
+}
+#flash img {
+	vertical-align: top;
+}
+/*
 .bigQuote {//old
 	display: inline;
 	font-size: 60px;
