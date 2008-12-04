@@ -15,13 +15,13 @@ Development Milestone 2:
 * List & delete clips
 * View/link to a single clip
 
-Development Milestone 3: _<< next milestone_
+Development Milestone 3:
 
 * RESTful routes
 * Dual-purpose bookmarklet (clipping OR manual text input)
 * Improved UI
 
-Development Milestone 4:
+Development Milestone 4: _<< next milestone_
 
 * Manual clip creation
 * User accounts
