@@ -10,9 +10,9 @@
 		</span>
 		<span class="clip-info">
 				<% if clip.sourceUri == nil -%>
-					<%= h(wb_truncate(clip.sourceTitle)) %>
+					<%= h(truncate_at_wb(clip.sourceTitle)) %>
 				<% else -%>
-					From <%= link_to h(wb_truncate(clip.sourceTitle)), clip.sourceUri -%>
+					From <%= link_to h(truncate_at_wb(clip.sourceTitle)), clip.sourceUri -%>
 				<% end -%>
 				 <%= timeago clip.created_at %>
 		</span>
