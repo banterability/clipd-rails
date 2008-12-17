@@ -1,3 +1,6 @@
+html{
+	background-color: #292929
+}
 strong {
 	font-weight: bold;
 }
@@ -5,8 +8,7 @@ em {
 	font-style: italic;
 }
 #canvas {
-	margin: 0 auto;
-	padding: 10px 0;
+	margin: 0px auto;
 }
 body {
 	font-family: Verdana, sans-serif;
@@ -14,48 +16,33 @@ body {
 	color: black;
 	font-weight: normal;
 }
-#header {
-	height: 70px;
-	padding: 0 20px;
-	color: #000;
-}
-#header-logo {
-	float: left;
-}
-#header-meta {
-	float: right;
-	padding: 0 20px;
-	padding-top: 30px;
-	font-size: 18px;
-	line-height: 18px;
-	font-family: "Trebuchet MS"
-}
 #content {
-	background-color: #fff;
-	padding: 10px 20px 10px 20px;
-	border-bottom: 3px solid #555;
+	background-color: #f9f9f9;
+	padding: 20px 20px 10px 20px;
 }
 #footer {
+	padding-top: 20px;
 	color: #fff;
-	background-color: #414141;
-	overflow: visible;
-	padding: 10px 20px;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "Trebuchet MS";
+	border-top:8px solid #000;
 	text-align: center;
 }
 .clip-body {
 	padding-bottom: 10px;
 	border-bottom: 1px dashed #999;
-	margin-bottom: 20px;
+	margin: 10px 0;
 }
 .clip-content {
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	line-height: 32px;
 }
 .quote{
-	background-color: #c80000;
+	background-color: #8f0000;
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 	color: #fff;
 	padding: 5px;
@@ -78,14 +65,12 @@ a {
 	padding: 2px;
 	font-weight: bold;
 }
-#header a, #footer a {
-	background-color: #fff;
-	color: #111;
+#footer-logo img {
+	background-color: #292929;
 }
-#header-logo a {
-	background-color: transparent;
-	padding: 0;
-	margin: 0;
+#footer-logo img:hover{
+	background-color: #292929;
+}
 }
 .clip-info a {
 	color: #000;
@@ -113,7 +98,7 @@ a:hover {
 abbr {
 	border-bottom: 1px inset #ccc;
 	font-style: normal;
-		padding: 2px;
+	padding: 2px;
 }
 abbr:hover{
 	background-color: #fff4c6;
@@ -133,4 +118,21 @@ div#flash {
 }
 #flash img {
 	vertical-align: top;
+}
+#footer-links ul{
+	list-style: none;
+	text-align: right;
+	float: right;
+}
+#footer-info{
+	float: left;
+	text-align: left;
+}
+#footer-logo{
+	width:130px;
+	float:left;
+}
+#footer-container{
+	width:90%;
+	margin:0 auto;
 }
