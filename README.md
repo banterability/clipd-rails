@@ -24,6 +24,7 @@ Development Milestone 3:
 Development Milestone 4: _<< next milestone_
 
 * Manual clip creation
+* Twitter bot
 * User accounts
 * Client-server database engine
 * Security hash in bookmarklet
