@@ -4,16 +4,16 @@
 	</div>
 	<div class="clip-meta">
 		<span class="clip-actions">
-				<%= link_to image_tag('icons/link.png'), clip %>
-				<%= link_to image_tag('icons/delete.png'), clip, :confirm => 'Are you sure?', :method => :delete %>
+			<%= link_to image_tag('icons/link.png'), clip %>
+			<%= link_to image_tag('icons/delete.png'), clip, :confirm => 'Are you sure?', :method => :delete %>
 		</span>
 		<span class="clip-info">
-				<% if clip.sourceUri == nil -%>
-					<strong><%= h(truncate_at_wb(clip.sourceTitle)) %></strong>
-				<% else -%>
-					From <%= link_to h(truncate_at_wb(clip.sourceTitle)), clip.sourceUri -%>
-				<% end -%>
-				 <%= timeago clip.created_at %>
+			<% if clip.sourceUri == nil -%>
+				<strong><%= h(truncate_at_wb(clip.sourceTitle)) -%></strong>
+			<% else -%>
+			    <%= link_to h(truncate_at_wb(clip.sourceTitle)), clip.sourceUri -%>
+			<% end -%>
+			<%= timeago clip.created_at %>
 		</span>
 		<br style="clear:both" />
 	</div>
