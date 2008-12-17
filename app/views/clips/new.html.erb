@@ -2,14 +2,12 @@
 
 <%= error_messages_for :clip %>
 
-<%# Looks for @clip to fill in values -%>
 <% form_for(@clip) do |f| %>
 
   <%= render :partial => "form", :locals => {:f => f} %>
 
-  <p>
-    <%= submit_tag "Create" %>
-  </p>
+  <p><%= submit_tag "Create" %></p>
+
 <% end %>
 
 <p><%= link_to 'Back', clips_path %></p>

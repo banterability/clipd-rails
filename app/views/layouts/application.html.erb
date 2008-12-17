@@ -3,25 +3,29 @@
  
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
  
-  <title>clip'd: <%= controller.action_name %></title>
-
+    <title>clip'd: <%= controller.action_name %></title>
+	
 	<%= render :partial => 'includes' %>
 
 </head>
-		
+
 <body>
-	
+
 <div id="canvas">
 
 <div id="content">	
-		<% if flash[:notice] %>
-		<div id="flash"><%= image_tag 'icons/info.png' %> <p><%= flash[:notice] %></p></div>
-		<% end %>
+	<% if flash[:notice] %>
+	<div id="flash"><%= image_tag 'icons/info.png' %> <p><%= flash[:notice] %></p></div>
+	<% end %>
 		
-		<%= yield  %>
+	<%= yield  %>
 
 </div>
 	
 <%= render :partial => 'footer' %>
+
+</div>
+</body>
+</html>
