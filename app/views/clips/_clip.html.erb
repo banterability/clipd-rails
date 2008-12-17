@@ -1,7 +1,6 @@
 <div class="clip-body">
 	<div class="clip-content">
-		<span class="bigQuote">&#8220;</span>
-					<%=h clip.selection %>
+		<span class="quote"><%=h clip.selection %></span>
 	</div>
 	<div class="clip-meta">
 		<span class="clip-actions">
@@ -10,7 +9,7 @@
 		</span>
 		<span class="clip-info">
 				<% if clip.sourceUri == nil -%>
-					<%= h(truncate_at_wb(clip.sourceTitle)) %>
+					<strong><%= h(truncate_at_wb(clip.sourceTitle)) %></strong>
 				<% else -%>
 					From <%= link_to h(truncate_at_wb(clip.sourceTitle)), clip.sourceUri -%>
 				<% end -%>
