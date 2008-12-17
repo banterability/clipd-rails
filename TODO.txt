@@ -4,3 +4,5 @@ in app/views/clips/_footer.html.erb:
 in public/stylesheets/style.css:
     change footer link colors
     fix footer image link behavior on hover
+    fix padding behavior on multi-line clips
+    remove unused styles (esp. re: header)
