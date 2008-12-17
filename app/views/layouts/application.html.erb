@@ -11,8 +11,10 @@
 
 </head>
 		
-<%= render :partial => 'header' %>
+<body>
 	
+<div id="canvas">
+
 <div id="content">	
 		<% if flash[:notice] %>
 		<div id="flash"><%= image_tag 'icons/info.png' %> <p><%= flash[:notice] %></p></div>
