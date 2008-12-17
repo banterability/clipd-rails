@@ -1,6 +1,3 @@
-html {
-	background-color: #111;
-}
 strong {
 	font-weight: bold;
 }
@@ -20,7 +17,7 @@ body {
 #header {
 	height: 70px;
 	padding: 0 20px;
-	color: white;
+	color: #000;
 }
 #header-logo {
 	float: left;
@@ -35,31 +32,34 @@ body {
 }
 #content {
 	background-color: #fff;
-	padding: 20px 20px 10px 20px;
-	border-top: 3px solid #555;
+	padding: 10px 20px 10px 20px;
 	border-bottom: 3px solid #555;
 }
 #footer {
 	color: #fff;
+	background-color: #414141;
 	overflow: visible;
 	padding: 10px 20px;
 	text-align: center;
 }
 .clip-body {
 	padding-bottom: 10px;
-	border-bottom: 2px inset #888;
+	border-bottom: 1px dashed #999;
 	margin-bottom: 20px;
 }
 .clip-content {
-	color: #111;
-	font-family: Arial;
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: bold;
-	letter-spacing: -1px;
 	padding-bottom: 10px;
-	line-height: 30px;
+	line-height: 32px;
+}
+.quote{
+	background-color: #c80000;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #fff;
+	padding: 5px;
+	letter-spacing: -1px;
 }
 .clip-meta {
 	font-size: 14px;
@@ -73,16 +73,9 @@ body {
 	float: left;
 	text-align: left;
 }
-.bigQuote {
-	display: inline;
-	font-size: 50px;
-	font-weight: bold;
-	vertical-align: -10px;
-}
 a {
 	text-decoration: none;
-	padding: 3px;
-	margin: 2px;
+	padding: 2px;
 	font-weight: bold;
 }
 #header a, #footer a {
@@ -95,11 +88,8 @@ a {
 	margin: 0;
 }
 .clip-info a {
-	background-color: #111;
-	color: #fff;
+	color: #000;
 	text-decoration: none;
-	padding: 3px;
-	margin: 2px;
 	font-weight: bold;
 }
 .clip-actions a {
@@ -107,23 +97,26 @@ a {
 	vertical-align: top;
 }
 a:hover {
-	text-decoration: underline;
 	font-weight: bold;
 }
 .clip-meta a:hover {
-	background-color: #fff;
-	color: #111;
+	color: #222;
+	background-color: #c8b8b8;
 }
 .clip-actions a:hover {
-	background-color: #CCC;
+	background-color: #c8b8b8;
 }
 #header a:hover, #footer a:hover {
 	background-color: #111;
 	color: #fff;
 }
 abbr {
-	//border-bottom: 1px dashed black;
-	font-style: italic;
+	border-bottom: 1px inset #ccc;
+	font-style: normal;
+		padding: 2px;
+}
+abbr:hover{
+	background-color: #fff4c6;
 }
 div#flash {
 	width: 80%;
@@ -141,15 +134,3 @@ div#flash {
 #flash img {
 	vertical-align: top;
 }
-/*
-.bigQuote {//old
-	display: inline;
-	font-size: 60px;
-	font-weight: bold;
-	height: 69px;
-	line-height: 8px;
-	vertical-align: -20px;
-	width: 29px;
-	font-family: Arial;
-}
-*/
