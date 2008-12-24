@@ -19,7 +19,7 @@ namespace :deploy do
   desc "restart application"
   task :restart do
     run "cp /home/clipper/public_html/clip-d/current/db/development.sqlite3 /home/clipper/public_html/clip-d/current/db/production.sqlite3"
-    run "/home/clipper/public_html/clip-d/current/rake db:migrate"
+    run "cd /home/clipper/public_html/clip-d/current/ && rake db:migrate"
     run "touch #{current_path}/tmp/restart.txt"
   end
 end
