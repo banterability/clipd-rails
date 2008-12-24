@@ -13,7 +13,7 @@ end
 
 Twitter::Base.new('EMAIL', 'PASSWORD').direct_messages(:since_id => last_id).each do |dm|
     
-    Net::HTTP.post_form(URI.parse('http://clipd.org/create'), {'u' => 'null', 't' => 'Twitter clip', 's' => dm.text})
+    Net::HTTP.post_form(URI.parse('http://clipd.org/clips'), {'u' => 'null', 't' => 'Twitter clip', 's' => dm.text})
     
     if dm.id.to_i > last_id
       last_id = dm.id.to_i
