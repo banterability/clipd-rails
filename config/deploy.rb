@@ -1,7 +1,7 @@
-set :application, "clip-d"
+set :application, "clipd"
 set :user, "clipper"
 set :domain, "clipd.org"
-set :repository,  "git@github.com:banterability/clip-d.git"
+set :repository,  "git@github.com:banterability/clipd.git"
 set :use_sudo, false
 set :deploy_to, "/home/#{user}/public_html/#{application}"
 set :port, 30001
@@ -18,8 +18,8 @@ role :db,  domain, :primary => true
 namespace :deploy do
   desc "restart application"
   task :restart do
-    run "cp /home/clipper/public_html/clip-d/current/db/development.sqlite3 /home/clipper/public_html/clip-d/current/db/production.sqlite3"
-    run "cd /home/clipper/public_html/clip-d/current/ && rake db:migrate"
+    run "cp /home/clipper/public_html/clipd/current/db/development.sqlite3 /home/clipper/public_html/clipd/current/db/production.sqlite3"
+    run "cd /home/clipper/public_html/clipd/current/ && rake db:migrate"
     run "touch #{current_path}/tmp/restart.txt"
   end
 end
