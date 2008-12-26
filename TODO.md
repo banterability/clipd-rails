@@ -10,7 +10,9 @@
 ### in clip\_bot.rb:
 - set up recurring process
 - find a proper location in folder structure
-- update submit URI
 
 ### in config/deploy.rb:
 - clean up cap recipe
+
+## in public/
+- rewrite error pages (404, 422, 500)
