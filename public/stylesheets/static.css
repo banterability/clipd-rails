@@ -42,7 +42,7 @@ body {
 	line-height: 32px;
 }
 .quote{
-	background-color: #8f0000;
+	background-color: #ff0000;
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 	color: #fff;
 	padding: 5px;
@@ -68,9 +68,8 @@ a {
 #footer-logo img {
 	background-color: #292929;
 }
-#footer-logo img:hover{
+#footer-logo img:hover {
 	background-color: #292929;
-}
 }
 .clip-info a {
 	color: #000;
@@ -91,7 +90,10 @@ a:hover {
 .clip-actions a:hover {
 	background-color: #c8b8b8;
 }
-#header a:hover, #footer a:hover {
+#footer a {
+	color: #fff;
+}
+#footer a:hover {
 	background-color: #111;
 	color: #fff;
 }
