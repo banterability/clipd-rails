@@ -1,7 +1,6 @@
 # Be sure to restart your server when you modify this file
 
-# Uncomment below to force Rails into production mode when
-# you don't control web/app server and can't set it the proper way
+# Uncomment below to force Rails into production mode
 # ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
@@ -48,7 +47,7 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_clip-d_session',
+    :session_key => '_clipd_session',
     :secret      => 'aa245dc149e7e30f36cea92ab0ca3f4100bf193dcbfd5625100a3b609467e2ac7889eba488989da8602283543c5e481b793fb989a04e368420bbbec713bf5e60'
   }
 
