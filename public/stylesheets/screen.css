@@ -1,0 +1,49 @@
+#canvas {margin: 0px auto;}
+
+body {font-family: Verdana, sans-serif; font-size: 12px; color: #292929; background-color: #f5f5f5; font-weight: normal;}
+
+#content {padding: 10px 20px;}
+
+#footer {background-color: #292929; padding: 20px 0; color: #fff; font-size: 13px; line-height: 18px; font-family: "Trebuchet MS"; border-top: 4px solid #999;}
+
+.clip-body {padding-bottom: 10px; border-bottom: 1px dashed #999; margin: 8px 0;}
+
+.clip-content {font-size: 20px; font-style: normal; font-variant: normal; padding-bottom: 15px; line-height: 32px;}
+
+.quote {background-color: #747867; font-family: "Lucida Grande", Verdana, sans-serif; color: #fff; padding: 7px; letter-spacing: -1px;}
+
+.clip-meta {font-size: 14px;}
+
+.clip-info {color: #444; float: right; text-align: right; font-weight: bold;}
+
+.clip-actions {float: left; text-align: left;}
+
+a {text-decoration: none; padding: 3px;}
+
+.clip-info a {color: inherit;}
+
+.clip-actions a {padding: 5px; vertical-align: top;}
+
+a:hover {background-color: #c8b8b8;}
+
+#footer a {color: #969b85; font-weight: bold;}
+
+#footer a:hover {background-color: #111; color: #fff;}
+
+#footer-logo a:hover {background-color: inherit;}
+
+abbr {border-bottom: 1px inset #ccc; font-style: normal; padding: 2px; font-size: 9px; text-transform: uppercase;}
+
+abbr:hover {background-color: #fff4c6;}
+
+#flash {background-color: #fff4c6; padding: 5px 0 5px 10px; font-size: 14px; font-style: italic; color: #000; border-bottom: 4px solid #999;}
+
+#flash img {vertical-align: middle;}
+
+#footer-links ul {list-style: none; text-align: right; float: right;}
+
+#footer-info {float: left; text-align: left;}
+
+#footer-logo {width: 150px; text-align: left; float: left;}
+
+#footer-container {width: 90%; margin: 0 auto;}
