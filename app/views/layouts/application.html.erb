@@ -15,11 +15,12 @@
 
 <div id="canvas">
 
-<div id="content">	
 	<% if flash[:notice] %>
-	<div id="flash"><%= image_tag 'icons/info.png' %> <p><%= flash[:notice] %></p></div>
+	<div id="flash"><p><%= image_tag 'icons/info.png' %> <%= flash[:notice] %></p></div>
 	<% end %>
-		
+
+<div id="content">	
+
 	<%= yield  %>
 
 </div>
