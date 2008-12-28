@@ -1,3 +1,10 @@
+### USERS (global):
+- new table of users
+- cookies
+- join users table with clips table
+- pages for: login, create account, reset password*
+- direct remote adds to additional page that checks logged-in user
+
 ### in app/views/clips/\_footer.html.erb:
 - double-check formatting
 
