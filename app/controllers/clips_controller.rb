@@ -31,8 +31,6 @@ class ClipsController < ApplicationController
   end
 
   def create
-      
-#    skip_before_filter :verify_authenticity_token # does this do anything?
     
     @clip = Clip.new
     @clip.sourceTitle = params[:t]
