@@ -38,6 +38,8 @@ abbr:hover {background-color: #fff4c6;}
 
 #flash {background-color: #fff4c6; padding: 5px 0 5px 10px; font-size: 14px; font-style: italic; color: #000; border-bottom: 4px solid #999;}
 
+#beta-notice {font-family: "Trebuchet MS"; background-color: #292929; color: #fff; padding: 10px 0 10px 10px; font-size: 16px; font-style: italic; text-transform: lowercase; border-bottom: 4px solid #999;}
+
 #flash img {vertical-align: middle;}
 
 #footer-links ul {list-style: none; text-align: right; float: right;}
