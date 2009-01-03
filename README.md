@@ -1,34 +1,6 @@
 clip'd, _fast, easy, & free online clipping_
 ============================================
 
-### Milestones
-
-Development Milestone 1:
-
-* PHP prototype
-* Clipping bookmarklet
-* View list of clips
-
-Development Milestone 2:
-
-* Port to Rails
-* List & delete clips
-* View/link to a single clip
-
-Development Milestone 3:
-
-* RESTful routes
-* Dual-purpose bookmarklet (clipping OR manual text input)
-* Improved UI
-
-Development Milestone 4: _<< next milestone_
-
-* Manual clip creation
-* Twitter bot
-* User accounts
-* Client-server database engine
-* Security hash in bookmarklet
-
 ### License
 
 Copyright (c) 2008 Jeffrey Long
