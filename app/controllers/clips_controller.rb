@@ -50,6 +50,23 @@ class ClipsController < ApplicationController
       end
     end
   end
+  
+  # PUT /clips/1
+  # PUT /clips/1.xml
+  def update
+    @clip = Clip.find(params[:id])
+ 
+    respond_to do |format|
+      if @clip.update_attributes(params[:clip])
+        flash[:notice] = 'Clip was successfully updated.'
+        format.html { redirect_to(@clip) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @clip.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
 
   # DELETE /clips/1
   # DELETE /clips/1.xml
