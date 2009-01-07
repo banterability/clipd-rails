@@ -5,6 +5,7 @@
 	<div class="clip-meta">
 		<span class="clip-actions">
 			<%= link_to image_tag('icons/link.png'), clip %>
+			<%= link_to image_tag('icons/pencil.png'), edit_clip_path(clip) %>
 			<%= link_to image_tag('icons/delete.png'), clip, :confirm => 'Are you sure?', :method => :delete %>
 		</span>
 		<span class="clip-info">
