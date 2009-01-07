@@ -1,4 +1,4 @@
 jQuery(document).ready(function() {
 	$('abbr[class*=timeago]').timeago();	
-	setTimeout( function() { $("#flash").fadeOut("slow") }, 3000);
+	setTimeout( function() { $("#flash").slideUp("medium") }, 2000);
 });
