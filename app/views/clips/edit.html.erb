@@ -1,14 +1,11 @@
-<h1>Editing clip</h1>
-
 <%= error_messages_for :clip %>
 
 <% form_for(@clip) do |f| %>
  
-  <%= render  :partial => "form", :locals => {:f => f} %>
+  <%= render :partial => "form", :locals => {:f => f} %>
  
   <p><%= submit_tag "Update" %></p>
   
 <% end %>
 
-<p><%= link_to 'Show', clip_path(@clip) %> |
-<%= link_to 'Back', clips_path %></p>
+<p><%= link_to '&laquo; Back to clip', clip_path(@clip) %></p>
