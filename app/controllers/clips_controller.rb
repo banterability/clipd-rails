@@ -21,10 +21,6 @@ class ClipsController < ApplicationController
     end
   end
 
-  # GET /clips/new
-  # GET /clips/new.xml
-
-
   # GET /clips/1/edit
   def edit
     @clip = Clip.find(params[:id])
